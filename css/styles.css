@@ -980,11 +980,12 @@ nav a.active {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* FAQ Section (SEO) */
+/* FAQ Section (SEO) - Reggae Themed */
 .faq-section {
     padding: 60px 0;
     background-color: var(--white);
-    border-top: 1px solid #eee;
+    border-top: 4px solid var(--primary-blue);
+    /* Green Top Border */
 }
 
 .faq-container {
@@ -993,7 +994,8 @@ nav a.active {
 }
 
 .faq-item {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(30, 127, 67, 0.2);
+    /* Subtle Green Border */
     margin-bottom: 10px;
 }
 
@@ -1004,18 +1006,30 @@ nav a.active {
     border: none;
     padding: 20px;
     font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--primary-dark);
+    font-weight: 800;
+    /* Bolder text */
+    color: var(--primary-blue);
+    /* Brand Green */
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
+    border-radius: 8px;
+    /* Soft corners */
 }
 
 .faq-question:hover {
     color: var(--primary-blue);
-    background-color: #f9f9f9;
+    background-color: rgba(247, 201, 72, 0.15);
+    /* Light Gold Hover */
+}
+
+/* Active State */
+.faq-item.active .faq-question {
+    background-color: var(--primary-blue);
+    /* Solid Green */
+    color: var(--white);
 }
 
 .faq-answer {
@@ -1026,22 +1040,26 @@ nav a.active {
 }
 
 .faq-answer p {
+    padding-top: 15px;
     padding-bottom: 20px;
-    color: #666;
+    color: #555;
     line-height: 1.6;
 }
 
 .faq-toggle {
     transition: transform 0.3s ease;
+    color: var(--primary-yellow);
+    /* Gold Icon */
+    font-size: 1.2rem;
 }
 
 .faq-item.active .faq-toggle {
     transform: rotate(180deg);
+    color: var(--primary-yellow);
 }
 
 .faq-item.active .faq-answer {
     max-height: 200px;
-    /* Approximate height */
 }
 
 .premium-service-card {
