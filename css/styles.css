@@ -994,7 +994,9 @@ nav a.active {
 }
 
 .faq-item {
-    background: linear-gradient(to bottom, #1E7F43, #14592D);
+    background-color: #1E7F43;
+    /* Fallback Solid Green */
+    background-image: linear-gradient(to bottom, #1E7F43, #14592D);
     /* Dark Green Gradient */
     border: 3px solid var(--primary-yellow);
     /* Gold Border */
