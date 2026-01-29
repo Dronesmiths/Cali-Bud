@@ -287,4 +287,31 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initial state
         beforeImage.style.width = baRange.value + '%';
     }
+
+    // Veteran Popup Logic
+    const veteranPopup = document.getElementById('veteran-popup');
+    const closeVeteranBtn = document.getElementById('close-popup');
+
+    if (veteranPopup) {
+        // Auto-dismiss after 10 seconds
+        setTimeout(() => {
+            if (veteranPopup) {
+                veteranPopup.style.animation = 'fadeOutPopup 0.5s ease-in forwards';
+                setTimeout(() => {
+                    veteranPopup.remove();
+                }, 500);
+            }
+        }, 10000);
+
+        // Manual close
+        if (closeVeteranBtn) {
+            closeVeteranBtn.addEventListener('click', () => {
+                veteranPopup.style.animation = 'fadeOutPopup 0.3s ease-in forwards';
+                setTimeout(() => {
+                    veteranPopup.remove();
+                }, 300);
+            });
+        }
+    }
 });
+
