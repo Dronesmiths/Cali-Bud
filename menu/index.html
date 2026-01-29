@@ -8,21 +8,23 @@
     <meta name="description"
         content="Explore our premium cannabis menu. Flower, vapes, edibles, and more available for delivery in Lancaster and Palmdale.">
 
+    <link rel="canonical" href="https://calibud.club/menu/" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cali-bud.com/menu/">
+    <meta property="og:url" content="https://calibud.club/menu/">
     <meta property="og:title" content="Menu & Products | Cali-Bud Delivery">
     <meta property="og:description"
         content="Explore our premium cannabis menu. Flower, vapes, edibles, and more available for delivery.">
-    <meta property="og:image" content="https://cali-bud.com/images/hero-home.jpg">
+    <meta property="og:image" content="https://calibud.club/images/hero-home.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cali-bud.com/menu/">
+    <meta property="twitter:url" content="https://calibud.club/menu/">
     <meta property="twitter:title" content="Menu & Products | Cali-Bud Delivery">
     <meta property="twitter:description"
         content="Explore our premium cannabis menu. Flower, vapes, edibles, and more available for delivery.">
-    <meta property="twitter:image" content="https://cali-bud.com/images/hero-home.jpg">
+    <meta property="twitter:image" content="https://calibud.club/images/hero-home.webp">
 
     <!-- Google FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +38,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
@@ -47,16 +55,11 @@
       "@type": "CollectionPage",
       "name": "Cali-Bud Delivery Menu",
       "description": "Premium cannabis products available for delivery.",
-      "url": "https://cali-bud.com/menu/",
+      "url": "https://calibud.club/menu/",
       "provider": {
         "@type": "LocalBusiness",
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Vapes & Concentrates"
-            }
-          }
-        ]
+        "name": "Cali-Bud Delivery",
+        "telephone": "+16615472422"
       }
     }
     </script>
@@ -67,14 +70,19 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <a href="../" class="logo">Cali-Bud <span>Delivery</span></a>
+            <a href="/" class="logo">
+                <img src="/images/Cali-Bud Club logo design.png" alt="Cali-Bud Delivery Logo"
+                    style="height: 60px; width: auto; display: block;">
+            </a>
+
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="../">Home</a></li>
-                    <li><a href="./" class="active">Menu</a></li>
-                    <li><a href="../about/">About Us</a></li>
-                    <li><a href="../blog/" style="display: none;">Blog</a></li>
-                    <li><a href="../contact/">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu/" class="active">Menu</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/contact/">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -83,8 +91,9 @@
                     <i class="fas fa-phone"></i>
                 </a>
 
+                <!-- Desktop Actions -->
                 <a href="tel:6615472422" class="phone-link mobile-hide"><i class="fas fa-phone"></i> 661-547-2422</a>
-                <a href="./" class="btn btn-primary">Order Now</a>
+                <a href="/menu/" class="btn btn-primary">Order Now</a>
                 <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             </div>
         </div>
@@ -177,19 +186,7 @@
         </div>
     </section>
 
-    <!-- Newsletter CTA Section -->
-    <section class="newsletter-cta">
-        <div class="container newsletter-content">
-            <i class="fas fa-cannabis" style="font-size: 3rem; color: var(--primary-yellow); margin-bottom: 20px;"></i>
-            <h2>Join the V.I.P. List</h2>
-            <p>Get exclusive drops, secret menu items, and 10% off your first delivery.</p>
-            <form class="newsletter-form"
-                onsubmit="event.preventDefault(); alert('Thanks for joining content coming soon!');">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
+
 
     <!-- SEO FAQ Section -->
     <section class="faq-section">
@@ -254,30 +251,36 @@
     <!-- Footer -->
     <footer class="aw-footer">
         <div class="container aw-footer-inner">
-            <!-- Brand Column -->
             <div class="aw-footer-brand">
-                <h4 style="color: white;">Cali-Bud Delivery</h4>
-                <p>Your premier cannabis delivery service in the Antelope Valley.</p>
+                <h4 style="color: white; margin-bottom: 10px;">Cali-Bud Delivery</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6;">Your premier licensed mobile cannabis
+                    delivery service in the Antelope Valley. Fast, discreet, and reliable.</p>
             </div>
-
-            <!-- Locations Column -->
             <div class="aw-footer-locations">
-                <h4 style="color: white; margin-bottom: 15px;">Service Areas</h4>
-                <ul>
-                    <li>Palmdale & Lancaster</li>
-                    <li>Quartz Hill & Rosamond</li>
-                    <li>Littlerock & Lake LA</li>
-                    <li>Sun Village & Pearblossom</li>
+                <h4 style="color: white; margin-bottom: 15px;">Products</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Flower</a></li>
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Edibles</a></li>
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Vapes</a></li>
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Concentrates</a></li>
                 </ul>
             </div>
-
-            <!-- Contact Column -->
+            <div class="aw-footer-locations">
+                <h4 style="color: white; margin-bottom: 15px;">Resources</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="/blog/" style="color: #ccc; text-decoration: none;">Blog</a></li>
+                    <li><a href="/news/" style="color: #ccc; text-decoration: none;">News Hub</a></li>
+                    <li><a href="/about/" style="color: #ccc; text-decoration: none;">About Us</a></li>
+                    <li><a href="/contact/" style="color: #ccc; text-decoration: none;">Support</a></li>
+                </ul>
+            </div>
             <div class="aw-footer-contact">
-                <h4 style="color: white; margin-bottom: 15px;">Contact Us</h4>
-                <p class="aw-footer-phone"><a href="tel:6615472422">661-547-2422</a></p>
+                <h4 style="color: white; margin-bottom: 15px;">Contact</h4>
+                <p class="aw-footer-phone"><a href="tel:6615472422"
+                        style="color: #F7C948; text-decoration: none; font-weight: 700;">661-547-2422</a></p>
+                <p style="font-size: 0.9rem; color: #ccc; margin-top: 10px;">Daily: 10am – 10pm</p>
             </div>
         </div>
-
         <div class="aw-footer-bottom">
             <p>© 2026 Cali-Bud Delivery. All rights reserved.</p>
         </div>

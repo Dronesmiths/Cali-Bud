@@ -1,59 +1,17 @@
-
-import os
-import re
-
-def get_article_meta(filepath):
-    """Extracts title and description from an HTML file."""
-    try:
-        with open(filepath, 'r') as f:
-            content = f.read()
-            
-        title_match = re.search(r'<title>(.*?) \|', content)
-        desc_match = re.search(r'<meta name="description" content="(.*?)">', content)
-        
-        title = title_match.group(1) if title_match else "Untitled Article"
-        description = desc_match.group(1) if desc_match else "No description available."
-        
-        return title, description
-    except Exception as e:
-        print(f"Error reading {filepath}: {e}")
-        return None, None
-
-def generate_hub():
-    base_dir = "blog"
-    articles = []
-    
-    # Scan for articles
-    if os.path.exists(base_dir):
-        for item in os.listdir(base_dir):
-            article_dir = os.path.join(base_dir, item)
-            index_path = os.path.join(article_dir, "index.html")
-            
-            if os.path.isdir(article_dir) and os.path.exists(index_path):
-                title, description = get_article_meta(index_path)
-                if title:
-                    articles.append({
-                        "slug": item,
-                        "title": title,
-                        "description": description
-                    })
-    
-    # HTML Template
-    html_start = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cannabis Culture & News | Cali-Bud Delivery</title>
-    <meta name="description" content="Stay informed with the latest cannabis news, product guides, and delivery tips for the Antelope Valley.">
-    <link rel="canonical" href="https://calibud.club/blog/" />
+    <title>The Ultimate Guide to Cannabis Delivery in Antelope Valley | Cali-Bud Delivery</title>
+    <meta name="description" content="Everything you need to know about legal marijuana delivery in Palmdale, Lancaster, and Rosamond. Learn about limits, ETAs, and top products.">
     
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://calibud.club/blog/">
-    <meta property="og:title" content="Cannabis Culture & News | Cali-Bud Delivery">
-    <meta property="og:description" content="Stay informed with the latest cannabis news, product guides, and delivery tips.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://calibud.club/blog/ultimate-guide-to-cannabis-delivery-antelope-valley/">
+    <meta property="og:title" content="The Ultimate Guide to Cannabis Delivery in Antelope Valley">
+    <meta property="og:description" content="Everything you need to know about legal marijuana delivery in Palmdale, Lancaster, and Rosamond. Learn about limits, ETAs, and top products.">
     <meta property="og:image" content="/images/hero-home.webp">
 
     <!-- Fonts -->
@@ -93,21 +51,43 @@ def generate_hub():
     </header>
 
     <!-- Page Hero -->
-    <section class="page-hero" style="background-image: linear-gradient(rgba(30, 127, 67, 0.9), rgba(20, 89, 45, 0.9)); padding: 80px 0; background-size: cover; background-position: center;">
+    <section class="page-hero" style="background-image: linear-gradient(rgba(30, 127, 67, 0.9), rgba(20, 89, 45, 0.9)), url('/images/hero-home.webp'); padding: 80px 0; background-size: cover; background-position: center;">
         <div class="container" style="text-align: center;">
-            <span style="color: #F7C948; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Green Room</span>
-            <h1 style="color: white; font-size: 3rem; margin-top: 10px; max-width: 900px; margin-left: auto; margin-right: auto;">Cannabis Tips & News</h1>
-            <p style="color: rgba(255,255,255,0.9); margin-top: 15px;">Education, strain reviews, and industry updates.</p>
+            <span style="color: #F7C948; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Cornerstone Guide</span>
+            <h1 style="color: white; font-size: 3rem; margin-top: 10px; max-width: 900px; margin-left: auto; margin-right: auto;">The Ultimate Guide to Cannabis Delivery in Antelope Valley</h1>
+            <p style="color: rgba(255,255,255,0.9); margin-top: 15px;">Official Guide by Cali-Bud Delivery</p>
         </div>
     </section>
 
-    <!-- Blog Grid -->
+    <!-- Content Section -->
     <section style="padding: 60px 0; background: #fdfdf5;">
-        <div class="container">
-            <div class="features-grid grid-balance-3">
-"""
+        <div class="container" style="max-width: 800px;">
+            <div class="blog-content" style="line-height: 1.8; color: #444; font-size: 1.1rem; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <p class="lead" style="font-size: 1.3rem; color: #1E7F43; font-weight: 600; margin-bottom: 30px;">
+                    Navigating the world of cannabis delivery in the High Desert doesn't have to be complicated. Whether you're in Palmdale or Quartz Hill, here is your definitive guide to a seamless experience.
+                </p>
+                
+                
+            <h2>Legality and Compliance</h2>
+            <p>In California, cannabis delivery is fully legal for adults aged 21+ (or 18+ with a medical recommendation). Prop 64 paved the way for services like Cali-Bud Delivery to bring the dispensary directly to your door.</p>
+            <h2>How It Works</h2>
+            <p>1. Browse our real-time menu. 2. Place your order via phone or online. 3. Receive a discreet delivery at your residential address.</p>
+            <h2>Service Areas</h2>
+            <p>We proudly serve the entire Antelope Valley, including West Lancaster, East Palmdale, and the surrounding desert communities.</p>
+        
 
-    html_end = """
+                <div style="background: #f0faf4; padding: 30px; border-left: 5px solid #1E7F43; margin: 40px 0; border-radius: 4px;">
+                    <h3 style="margin-top: 0; color: #1E7F43;">Ready to Order?</h3>
+                    <p style="margin-bottom: 15px;">Skip the line and experience the fastest delivery in the Antelope Valley.</p>
+                    <a href="tel:6615472422" class="btn btn-primary">Call 661-547-2422</a>
+                </div>
+
+                <hr style="margin: 50px 0; border: 0; border-top: 1px solid #eee;">
+                
+                <div style="font-size: 0.9rem; color: #666;">
+                    <p><strong>Tags:</strong> Cannabis Delivery, Antelope Valley, Legal Weed, Guide</p>
+                    <p><a href="/blog/">&larr; Back to All Articles</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -150,32 +130,3 @@ def generate_hub():
     <script src="/js/script.js"></script>
 </body>
 </html>
-"""
-
-    # Generate Cards
-    cards_html = ""
-    for article in articles:
-        card = f"""
-                <div class="feature-card" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-                    <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <span style="color: #1E7F43; font-size: 0.8rem; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block;">Article</span>
-                        <h3 style="margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">{article['title']}</h3>
-                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">{article['description']}</p>
-                        <div style="margin-top: auto;">
-                            <a href="/blog/{article['slug']}/" style="color: #1E7F43; font-weight: 600; text-decoration: none;">Read More &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-        """
-        cards_html += card
-
-    # Write Content
-    full_html = html_start + cards_html + html_end
-    
-    with open(os.path.join(base_dir, "index.html"), "w") as f:
-        f.write(full_html)
-    
-    print(f"Generated Blog Hub with {len(articles)} articles.")
-
-if __name__ == "__main__":
-    generate_hub()

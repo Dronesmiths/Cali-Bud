@@ -1,4 +1,4 @@
-# AI Pilots: Newsletter & Hub Strategy
+# Cali-Bud Delivery: Newsletter & Hub Strategy
 
 This document defines how to build and maintain the "Pulse" of the brand through a dedicated Newsletter Hub.
 
@@ -6,7 +6,7 @@ This document defines how to build and maintain the "Pulse" of the brand through
 Create a central hub that lists all updates, project spotlights, and guides.
 - **File**: `/news/index.html`
 - **Layout**: Use a card-grid similar to the Homepage services, but optimized for text summaries and "Read More" links.
-- **CTA**: Every page must have a "Join the Community" email capture/link.
+- **CTA**: The hub serves as a historical reference/archive of updates. No active email capture forms are required on-site to keep the UI clean.
 
 ## 2. The Deployment Workflow
 To ensure a consistent rollout from the 50-post [CONTENT_QUEUE.md](CONTENT_QUEUE.md):

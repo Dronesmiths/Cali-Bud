@@ -1,4 +1,4 @@
-# AI Pilots: Client Intake & Niche Strategy
+# Cali-Bud Delivery: Client Intake & Niche Strategy
 
 Before using the automated deployment workflow, the AI agent must have the following information defined for the new project.
 

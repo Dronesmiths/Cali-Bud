@@ -1,4 +1,4 @@
-# AI Pilots: Blog & Cornerstone Content Strategy
+# Cali-Bud Delivery: Blog & Cornerstone Content Strategy
 
 To dominate local search, the site must move beyond "Menu Pages" and establish **Intent Ownership** through cornerstone pillars and lifestyle guides.
 

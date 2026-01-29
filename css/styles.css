@@ -706,6 +706,7 @@ nav a.active {
     overflow: visible;
     margin-top: 30px;
     /* Space for icon */
+    animation: cardEntrance 0.8s ease-out both;
 }
 
 .feature-card:hover {
@@ -760,6 +761,103 @@ nav a.active {
     font-size: 0.95rem;
     color: var(--text-light);
     line-height: 1.6;
+}
+
+/* Delivery Zone Cards - About Page */
+.delivery-zones {
+    position: relative;
+    overflow: hidden;
+}
+
+.delivery-zones .container {
+    position: relative;
+    z-index: 2;
+}
+
+.zone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.zone-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--primary-dark);
+    animation: cardEntrance 0.6s ease-out both;
+}
+
+.zone-card:hover {
+    transform: translateY(-8px);
+    background: var(--white);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.zone-card i {
+    font-size: 2rem !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 15px !important;
+    transition: transform 0.3s ease;
+}
+
+.zone-card:hover i {
+    transform: scale(1.2) rotate(5deg);
+    color: var(--secondary-color) !important;
+    /* Flash red on hover for character */
+}
+
+.zone-card h3 {
+    margin: 0 !important;
+    font-size: 1.25rem;
+    color: var(--primary-dark) !important;
+    font-weight: 700;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Stagger animation for cards */
+.zone-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.zone-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.zone-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.zone-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.zone-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.zone-card:nth-child(6) {
+    animation-delay: 0.6s;
 }
 
 /* Premium Service Cards (V3 - Visual Upgrade) */
@@ -3516,6 +3614,32 @@ footer {
     align-items: center;
     justify-content: center;
     border: 2px solid transparent;
+    animation: cardEntrance 0.6s ease-out both;
+}
+
+/* Staggered Entrance */
+.location-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.location-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.location-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.location-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.location-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.location-card:nth-child(6) {
+    animation-delay: 0.6s;
 }
 
 .location-card:hover {

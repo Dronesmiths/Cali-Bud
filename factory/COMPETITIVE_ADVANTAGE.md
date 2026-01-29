@@ -1,4 +1,4 @@
-# AI Pilots: Competitive Advantage Strategy (The "Top 5")
+# Cali-Bud Delivery: Competitive Advantage Strategy (The "Top 5")
 
 To dominate the market, the site must explicitly communicate why Cali-Bud Delivery is the superior choice over local competitors. Use this roadmap to define and deploy these 5 "Unfair Advantages."
 

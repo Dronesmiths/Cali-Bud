@@ -12,24 +12,40 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo">Cali-Bud <span>Delivery</span></a>
+            <a href="/" class="logo">
+                <img src="/images/Cali-Bud Club logo design.png" alt="Cali-Bud Delivery Logo"
+                    style="height: 60px; width: auto; display: block;">
+            </a>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/menu/">Menu</a></li>
                     <li><a href="/about/" class="active">About Us</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/news/">News</a></li>
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="tel:6614984444" class="phone-link mobile-hide"><i class="fas fa-phone"></i> 661-547-2422</a>
-                <a href="/contact/" class="btn btn-primary">Order Now</a>
+                <!-- Mobile Phone Icon -->
+                <a href="tel:6615472422" class="mobile-center-phone" aria-label="Call Now">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <!-- Desktop Actions -->
+                <a href="tel:6615472422" class="phone-link mobile-hide"><i class="fas fa-phone"></i> 661-547-2422</a>
+                <a href="/menu/" class="btn btn-primary">Order Now</a>
                 <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             </div>
         </div>
@@ -102,49 +118,38 @@
 
     <!-- Delivery Zones Feature -->
     <section class="delivery-zones"
-        style="padding: 80px 0; background-color: var(--primary-green); color: white; text-align: center;">
+        style="padding: 100px 0; background-color: var(--primary-green); color: white; text-align: center;">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 10px; color: var(--primary-yellow);">Where We Deliver</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 50px; opacity: 0.9;">Fast, reliable delivery across the entire
-                Antelope Valley.</p>
+            <h2 style="font-size: 3rem; margin-bottom: 10px; color: var(--primary-yellow); text-transform: uppercase;">
+                Where We Deliver</h2>
+            <p
+                style="font-size: 1.3rem; margin-bottom: 60px; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Providing fast, reliable, and discreet delivery across the entire Antelope Valley.</p>
 
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
-                <div class="zone-card"
-                    style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
-                    <i class="fas fa-map-marker-alt"
-                        style="color: var(--primary-yellow); font-size: 1.5rem; margin-bottom: 10px;"></i>
-                    <h3 style="margin-bottom: 0;">Palmdale</h3>
+            <div class="zone-grid">
+                <div class="zone-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Palmdale</h3>
                 </div>
-                <div class="zone-card"
-                    style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
-                    <i class="fas fa-map-marker-alt"
-                        style="color: var(--primary-yellow); font-size: 1.5rem; margin-bottom: 10px;"></i>
-                    <h3 style="margin-bottom: 0;">Lancaster</h3>
+                <div class="zone-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lancaster</h3>
                 </div>
-                <div class="zone-card"
-                    style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
-                    <i class="fas fa-map-marker-alt"
-                        style="color: var(--primary-yellow); font-size: 1.5rem; margin-bottom: 10px;"></i>
-                    <h3 style="margin-bottom: 0;">Quartz Hill</h3>
+                <div class="zone-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Quartz Hill</h3>
                 </div>
-                <div class="zone-card"
-                    style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
-                    <i class="fas fa-map-marker-alt"
-                        style="color: var(--primary-yellow); font-size: 1.5rem; margin-bottom: 10px;"></i>
-                    <h3 style="margin-bottom: 0;">Rosamond</h3>
+                <div class="zone-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Rosamond</h3>
                 </div>
-                <div class="zone-card"
-                    style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
-                    <i class="fas fa-map-marker-alt"
-                        style="color: var(--primary-yellow); font-size: 1.5rem; margin-bottom: 10px;"></i>
-                    <h3 style="margin-bottom: 0;">Lake LA</h3>
+                <div class="zone-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lake LA</h3>
                 </div>
-                <div class="zone-card"
-                    style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
-                    <i class="fas fa-map-marker-alt"
-                        style="color: var(--primary-yellow); font-size: 1.5rem; margin-bottom: 10px;"></i>
-                    <h3 style="margin-bottom: 0;">Littlerock</h3>
+                <div class="zone-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Littlerock</h3>
                 </div>
             </div>
         </div>
@@ -160,29 +165,40 @@
         </div>
     </section>
 
+
+
     <footer class="aw-footer">
         <div class="container aw-footer-inner">
             <div class="aw-footer-brand">
-                <h4 style="color: white;">Cali-Bud Delivery</h4>
-                <p>Your premier cannabis delivery service.</p>
+                <h4 style="color: white; margin-bottom: 10px;">Cali-Bud Delivery</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6;">Your premier licensed mobile cannabis
+                    delivery service in the Antelope Valley. Fast, discreet, and reliable.</p>
+            </div>
+            <div class="aw-footer-locations">
+                <h4 style="color: white; margin-bottom: 15px;">Products</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Flower</a></li>
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Edibles</a></li>
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Vapes</a></li>
+                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Concentrates</a></li>
+                </ul>
+            </div>
+            <div class="aw-footer-locations">
+                <h4 style="color: white; margin-bottom: 15px;">Resources</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="/blog/" style="color: #ccc; text-decoration: none;">Blog</a></li>
+                    <li><a href="/news/" style="color: #ccc; text-decoration: none;">News Hub</a></li>
+                    <li><a href="/about/" style="color: #ccc; text-decoration: none;">About Us</a></li>
+                    <li><a href="/contact/" style="color: #ccc; text-decoration: none;">Support</a></li>
+                </ul>
             </div>
             <div class="aw-footer-contact">
-                <h4 style="color: white; margin-bottom: 15px;">Contact Us</h4>
-                <p class="aw-footer-phone"><a href="tel:6614984444">661-547-2422</a></p>
+                <h4 style="color: white; margin-bottom: 15px;">Contact</h4>
+                <p class="aw-footer-phone"><a href="tel:6615472422"
+                        style="color: #F7C948; text-decoration: none; font-weight: 700;">661-547-2422</a></p>
+                <p style="font-size: 0.9rem; color: #ccc; margin-top: 10px;">Daily: 10am – 10pm</p>
             </div>
         </div>
-
-        <!-- Neighborhoods SEO Block -->
-        <div class="aw-footer-neighborhoods"
-            style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
-            <h4 style="font-size: 0.9rem; color: #aaa; margin-bottom: 10px;">Neighborhoods Served</h4>
-            <p style="font-size: 0.8rem; color: #888; line-height: 1.6;">
-                West Lancaster • East Palmdale • Quartz Hill • Rancho Vista • Anaverde • Sun Village •
-                Littlerock • Pearblossom • Lake Los Angeles • Leona Valley • Rosamond • Antelope Acres •
-                White Fence Farms • Desert View Highlands • Joshua Ranch
-            </p>
-        </div>
-
         <div class="aw-footer-bottom">
             <p>© 2026 Cali-Bud Delivery. All rights reserved.</p>
         </div>

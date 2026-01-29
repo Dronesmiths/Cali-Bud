@@ -1,4 +1,4 @@
-# Static Site Template: Automated Deployment Workflow
+# Cali-Bud Delivery: Automated Deployment Workflow
 
 > [!TIP]
 > **To Commencement the Next Run**: Tell the AI Agent, "**Initiate Website Factory Workflow: Run Step 0 of DEPLOYMENT_ORDER.md.**" This will trigger the agent to follow the strict safety and branding protocols we've established.
@@ -19,7 +19,7 @@ Follow these steps in strict order to repurpose this template. Do not proceed to
 
 ### Step 1: SEO & Identity Sanitization
 - **Action**: Scrub existing branding from `application/ld+json` and `<meta>` tags in all `.html` files.
-- **Verification**: Run `grep -r "Reed and Sons" .` to ensure zero matches in the new build.
+- **Verification**: Run `grep -r "Solar Cleaners" .` (or previous niche name) to ensure zero matches in the new build.
 
 ### Step 2: Connection & Infrastructure Decoupling
 - **Action**: Initialize a new Git repo and verify AWS connectivity. 
@@ -35,11 +35,11 @@ Follow these steps in strict order to repurpose this template. Do not proceed to
 - **[SAFETY] Dry Run**: Before the first sync, run a dry run to ensure no legacy data is being overwritten.
     - `aws s3 sync . s3://[NEW-BUCKET-NAME] --exclude ".git/*" --profile mediusa --dryrun`
 - **Commands**:
-  ```bash
-  git add . && git commit -m "chore: baseline template reset" && git push
-  aws s3 sync . s3://[NEW-BUCKET-NAME] --exclude ".git/*" --profile mediusa
-  aws cloudfront create-invalidation --distribution-id [NEW-DIST-ID] --paths "/*" --profile mediusa
-  ```
+```bash
+git add . && git commit -m "chore: baseline template reset" && git push
+aws s3 sync . s3://cali-bud-deliveries --delete --exclude ".git/*" --exclude ".github/*" --exclude "factory/*" --profile mediusa
+aws cloudfront create-invalidation --distribution-id E48DSMEP69HP2 --paths "/*" --profile mediusa
+```
 - **Verification**: Confirm the site loads the "Clean Slate" version at the new URL.
 
 ### Step 4: AI Image Generation & Asset Collection
@@ -55,7 +55,7 @@ Follow these steps in strict order to repurpose this template. Do not proceed to
 ### Step 5b: The Lean Purge (Mandatory)
 - **Action**: Run the asset audit script to identify and delete unused legacy images *before* content expansion.
 - **Command**: `python3 factory/scripts/clean_unused_assets.py` -> Review `_trash_images/` -> Delete.
-- **Goal**: Prevent V1/V2 assets (e.g., "lawn mowers") from polluting the V3 repo.
+- **Goal**: Prevent V1/V2 assets (e.g., "lawn care" or "cleaning") from polluting the V3 repo.
 
 ### Step 6: Niche Rebranding & Local SEO
 - **Action**: Implement new niche content and imagery following this strict order:
@@ -80,11 +80,11 @@ Follow these steps in strict order to repurpose this template. Do not proceed to
 - **Command**: `python3 scripts/preflight_audit.py`
 - **Verification**: If the script returns "FAIL", resolve all issues before proceeding.
 - **Commands**:
-  ```bash
-  git add . && git commit -m "chore: final pre-flight hardening" && git push
-  aws s3 sync . s3://[NEW-BUCKET-NAME] --exclude ".git/*" --profile mediusa
-  aws cloudfront create-invalidation --distribution-id [NEW-DIST-ID] --paths "/*" --profile mediusa
-  ```
+```bash
+git add . && git commit -m "chore: final pre-flight hardening" && git push
+aws s3 sync . s3://cali-bud-deliveries --delete --exclude ".git/*" --exclude ".github/*" --exclude "factory/*" --profile mediusa
+aws cloudfront create-invalidation --distribution-id E48DSMEP69HP2 --paths "/*" --profile mediusa
+```
 - **Verification**: Confirm a "PERFECT PASS" from the script and verify the live site one last time.
 
 ### Step 9: The Content Factory (Blog Expansion)
