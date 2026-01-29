@@ -195,30 +195,53 @@ nav a.active {
     padding: 5px;
 }
 
+/* Mobile Center Phone Icon */
+.mobile-center-phone {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    header .container {
+        position: relative;
+    }
+
+    /* Consolidating logic into the main mobile breakpoint for simplicity */
+}
+
 /* Responsive Mobile Header */
 @media (max-width: 768px) {
 
-    /* Hide specific elements on mobile */
-    /* Hide specific elements on mobile */
     .mobile-hide {
         display: none !important;
+    }
+
+    /* Logo - Full Text (Restored) */
+    .logo {
+        font-size: 24px;
+        /* Increased from 20px */
+        flex-shrink: 1;
+        margin-right: 5px;
+    }
+
+    .logo span {
+        display: inline;
+        /* Always show 'Delivery' */
     }
 
     .header-actions .btn {
         display: none !important;
     }
 
-    /* Show hamburger button */
     .mobile-menu-btn {
         display: block;
-        /* Removed 'order' property as it is now structurally last in the div */
     }
 
-    /* Header Actions adjustment */
     .header-actions {
-        gap: 10px;
-        margin-right: 0;
-        /* No longer need extra space as button is inside */
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        /* Spacing between phone icon and menu button */
+        margin-left: auto;
     }
 
     .btn {
@@ -228,6 +251,7 @@ nav a.active {
 
     /* Mobile Navigation Menu */
     nav {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -235,15 +259,50 @@ nav a.active {
         background-color: var(--white);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        transform: translateY(-150%);
-        /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
         transition: transform 0.3s ease-in-out;
         z-index: 999;
     }
 
     nav.active {
-        transform: translateY(0);
-        /* Slide down */
+        display: flex;
+    }
+
+    /* Mobile Phone Icon - Right Aligned next to Hamburger */
+    .mobile-center-phone {
+        display: flex !important;
+        position: static;
+        /* Natural flow in flex container */
+        transform: none;
+        width: 40px;
+        height: 40px;
+        background-color: var(--white);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-blue);
+        font-size: 1.2rem;
+        z-index: 1001;
+        text-decoration: none;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        animation: phoneGlow 2s infinite ease-in-out;
+        border: 2px solid var(--primary-green);
+    }
+
+    @keyframes phoneGlow {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+        }
+
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+        }
     }
 
     nav ul {
@@ -259,26 +318,17 @@ nav a.active {
     }
 }
 
-/* Hero Section */
+/* Hero Section - Cali-Bud Themed */
 .hero {
-    background: linear-gradient(rgba(27, 77, 46, 0.75), rgba(13, 38, 23, 0.65)), url('/images/leona-valley-oasis.webp');
+    background: url('../images/hero-home.webp');
+    /* Use local image */
     background-size: cover;
     background-position: center;
     color: var(--white);
-    padding: 150px 0 100px;
+    padding: 180px 0 120px;
     text-align: center;
     position: relative;
     overflow: hidden;
-}
-
-.hero-video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
 }
 
 .hero-overlay {
@@ -287,7 +337,8 @@ nav a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(51, 187, 255, 0.5) 0%, rgba(0, 136, 204, 0.4) 100%);
+    /* Dark Green Overlay for readability */
+    background: linear-gradient(135deg, rgba(30, 127, 67, 0.85) 0%, rgba(13, 38, 23, 0.9) 100%);
     z-index: 1;
 }
 
@@ -641,38 +692,101 @@ nav a.active {
     }
 }
 
+/* Feature Card (Why Choose Us) - Cali-Bud Themed */
 .feature-card {
     background: var(--white);
     padding: 40px 30px;
     border-radius: 20px;
+    border: 3px solid transparent;
+    /* Prepare for hover */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    /* Soft glassmorphism feel */
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: visible;
+    margin-top: 30px;
+    /* Space for icon */
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 127, 67, 0.15);
+    /* Green Shadow */
+    border-color: var(--primary-yellow);
+    /* Gold Border */
+}
+
+.feature-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: var(--bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -75px auto 20px;
+    /* Pull icon up */
+    border: 4px solid var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+    background: var(--primary-blue);
+    /* Green */
+    transform: scale(1.1);
 }
 
 .feature-icon {
-    font-size: 40px;
-    color: var(--primary-dark);
-    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--primary-blue);
+    /* Green Icon */
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    color: var(--white);
+    /* White Icon on Hover */
 }
 
 .feature-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: var(--text-dark);
     margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* Premium Service Cards (V3 - Visual Upgrade) */
+.premium-service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(30, 127, 67, 0.9) 0%, rgba(20, 89, 45, 0.95) 100%);
+    /* Green Gradient */
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.premium-service-card:hover::before {
+    background: linear-gradient(135deg, rgba(214, 40, 40, 0.9) 0%, rgba(160, 30, 30, 0.95) 100%);
+    /* Red Gradient on Hover */
+}
+
 .premium-service-card {
     position: relative;
     padding: 50px 30px 40px;
     border-radius: 30px;
-    border: 5px solid var(--primary-green);
+    border: 5px solid var(--primary-yellow);
+    /* Gold Border */
     min-height: 450px;
     display: flex;
     flex-direction: column;
@@ -689,23 +803,8 @@ nav a.active {
 .premium-service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-color: white;
-}
-
-.premium-service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(51, 187, 255, 0.7) 0%, rgba(0, 136, 204, 0.6) 100%);
-    z-index: 1;
-    transition: background 0.3s ease;
-}
-
-.premium-service-card:hover::before {
-    background: linear-gradient(135deg, rgba(27, 77, 46, 0.8) 0%, rgba(13, 38, 23, 0.6) 100%);
+    border-color: var(--primary-blue);
+    /* Green Border on Hover */
 }
 
 .premium-service-card>* {
@@ -906,6 +1005,30 @@ nav a.active {
 
 .premium-location-card:hover p {
     color: var(--primary-green);
+}
+
+.premium-location-card:hover h3 {
+    color: var(--primary-blue);
+    /* Green */
+}
+
+/* Location Pills */
+.location-pill {
+    background-color: var(--white);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    border: 2px solid var(--primary-yellow);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.location-pill:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
 }
 
 /* Services Preview */
@@ -1830,24 +1953,15 @@ footer {
 }
 
 /* New Footer Styles */
+/* Footer - Cali-Bud Themed */
 .aw-footer {
-    background-color: var(--primary-dark);
+    background-color: var(--blue-dark);
+    /* Deep Green */
     color: var(--white);
-    padding: 60px 0 0;
-    font-size: 0.95rem;
+    padding: 70px 0 30px;
+    border-top: 5px solid var(--primary-yellow);
+    /* Gold Border */
     position: relative;
-    border-top: 4px solid transparent;
-    background-image:
-        linear-gradient(var(--primary-dark), var(--primary-dark)),
-        linear-gradient(90deg,
-            #4A6FA5 0%,
-            #1E3A5F 25%,
-            #4A6FA5 50%,
-            #1E3A5F 75%,
-            #4A6FA5 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    animation: ledGlow 3s linear infinite;
 }
 
 @keyframes ledGlow {
@@ -1967,7 +2081,8 @@ footer {
 }
 
 .aw-footer-links h4 {
-    color: var(--accent-gold);
+    color: var(--primary-yellow);
+    /* Gold Text */
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -1989,7 +2104,8 @@ footer {
 }
 
 .aw-footer-links a:hover {
-    color: var(--accent-gold);
+    color: var(--primary-yellow);
+    /* Gold Hover */
 }
 
 
@@ -2000,7 +2116,8 @@ footer {
 }
 
 .aw-footer-locations h4 {
-    color: var(--accent-gold);
+    color: var(--primary-yellow);
+    /* Gold Text */
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
@@ -2023,7 +2140,8 @@ footer {
 }
 
 .aw-footer-locations a:hover {
-    color: var(--accent-gold);
+    color: var(--primary-yellow);
+    /* Gold Hover */
 }
 
 .aw-footer-bottom {
@@ -3002,7 +3120,7 @@ footer {
     }
 }
 
-/* Process Section (How It Works) */
+/* Process Section (How It Works) - Cali-Bud Themed */
 .process-section {
     padding: 100px 0;
     background-color: var(--white);
@@ -3018,48 +3136,64 @@ footer {
 
 .process-card {
     background: var(--white);
-    border: 2px solid var(--primary-blue);
-    /* Green border */
-    border-radius: 20px;
-    padding: 50px 30px;
+    border: 5px solid var(--primary-yellow);
+    /* Gold Border */
+    border-radius: 30px;
+    padding: 60px 30px 40px;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .process-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(30, 127, 67, 0.15);
+    /* Green Shadow */
+    border-color: var(--primary-blue);
+    /* Green Border on Hover */
 }
 
 .process-icon-wrapper {
-    width: 80px;
-    height: 80px;
-    background: var(--white);
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--blue-dark) 100%);
+    /* Green Gradient */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -90px auto 30px;
+    margin: -105px auto 30px;
     /* Pull icon up */
-    border: 4px solid var(--white);
+    border: 5px solid var(--white);
     /* White ring */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.process-card:hover .process-icon-wrapper {
+    transform: scale(1.1) rotate(-5deg);
+    background: linear-gradient(135deg, var(--primary-accent) 0%, #a01e1e 100%);
+    /* Red Gradient on Hover */
 }
 
 .process-icon {
-    font-size: 32px;
-    color: var(--primary-blue);
+    font-size: 36px;
+    color: var(--white);
 }
 
 .process-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
     color: var(--text-dark);
 }
 
 .process-card p {
     color: var(--text-light);
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.6;
 }
 
