@@ -980,12 +980,12 @@ nav a.active {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* FAQ Section (SEO) - Reggae Themed */
+/* FAQ Section (SEO) - Reggae Card Style */
 .faq-section {
     padding: 60px 0;
-    background-color: var(--white);
+    background-color: var(--bg-light);
+    /* Light background to make cards pop */
     border-top: 4px solid var(--primary-blue);
-    /* Green Top Border */
 }
 
 .faq-container {
@@ -994,9 +994,22 @@ nav a.active {
 }
 
 .faq-item {
-    border-bottom: 1px solid rgba(30, 127, 67, 0.2);
-    /* Subtle Green Border */
-    margin-bottom: 10px;
+    background: linear-gradient(to bottom, #1E7F43, #14592D);
+    /* Dark Green Gradient */
+    border: 3px solid var(--primary-yellow);
+    /* Gold Border */
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* Contains the answer radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(247, 201, 72, 0.3);
+    /* Gold Glow */
 }
 
 .faq-question {
@@ -1004,62 +1017,60 @@ nav a.active {
     text-align: left;
     background: none;
     border: none;
-    padding: 20px;
-    font-size: 1.1rem;
-    font-weight: 800;
-    /* Bolder text */
-    color: var(--primary-blue);
-    /* Brand Green */
+    padding: 20px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    /* White Text */
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
-    border-radius: 8px;
-    /* Soft corners */
 }
 
 .faq-question:hover {
-    color: var(--primary-blue);
-    background-color: rgba(247, 201, 72, 0.15);
-    /* Light Gold Hover */
+    color: var(--primary-yellow);
+    /* Gold on Hover */
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Active State */
 .faq-item.active .faq-question {
-    background-color: var(--primary-blue);
-    /* Solid Green */
-    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--primary-yellow);
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    padding: 0 20px;
+    padding: 0 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Slightly darker answer area */
 }
 
 .faq-answer p {
     padding-top: 15px;
-    padding-bottom: 20px;
-    color: #555;
+    padding-bottom: 25px;
+    color: #f0f0f0;
+    /* Off-white text */
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .faq-toggle {
     transition: transform 0.3s ease;
     color: var(--primary-yellow);
-    /* Gold Icon */
     font-size: 1.2rem;
 }
 
 .faq-item.active .faq-toggle {
     transform: rotate(180deg);
-    color: var(--primary-yellow);
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .premium-service-card {
