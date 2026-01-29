@@ -781,6 +781,120 @@ nav a.active {
     /* Red Gradient on Hover */
 }
 
+/* Menu Cards (Product Categories) */
+.menu-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 380px;
+    /* Slightly taller for dramatic effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    padding: 30px;
+    color: var(--white);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 3px solid var(--primary-yellow);
+    /* Gold Border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Green Overlay - Matches Homepage Theme */
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(30, 127, 67, 0.85), rgba(20, 89, 45, 0.95));
+    /* Reggae Green */
+    z-index: 1;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+    /* Strong overlay to make text pop */
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(247, 201, 72, 0.4);
+    /* Yellow Glow */
+    border-color: #ffe066;
+    /* Lighter gold on hover */
+}
+
+.menu-card:hover::before {
+    opacity: 0.8;
+    /* Let more image show through on hover */
+    background: linear-gradient(to bottom, rgba(30, 127, 67, 0.7), rgba(20, 89, 45, 0.9));
+}
+
+.menu-card .card-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.menu-card h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menu-card p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.menu-card .learn-more {
+    color: var(--primary-yellow);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+    font-size: 1rem;
+}
+
+.menu-card .learn-more i {
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover .learn-more {
+    gap: 12px;
+    color: #fff;
+    /* White text on hover for contrast */
+}
+
+.menu-card:hover .learn-more i {
+    transform: translateX(3px);
+}
+
+.menu-cardIcon {
+    font-size: 3rem;
+    color: var(--primary-yellow);
+    /* Gold Icon */
+    margin-bottom: 20px;
+    display: block;
+    /* Ensure icon is shown if included */
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .premium-service-card {
     position: relative;
     padding: 50px 30px 40px;
