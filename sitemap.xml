@@ -1,133 +1,108 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://avpoolbros.com/</loc>
+    <loc>https://cali-bud.com/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://avpoolbros.com/services/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://avpoolbros.com/about/</loc>
+    <loc>https://cali-bud.com/contact/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://avpoolbros.com/contact/</loc>
+    <loc>https://cali-bud.com/privacy/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/contact/</loc>
+    <loc>https://cali-bud.com/terms/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/privacy/</loc>
+    <loc>https://cali-bud.com/about/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/terms/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/about/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/dryer-not-heating-troubleshooting/</loc>
+    <loc>https://cali-bud.com/blog/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/why-is-my-washer-not-spinning/</loc>
+    <loc>https://cali-bud.com/blog/dryer-not-heating-troubleshooting/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/5-signs-your-refrigerator-needs-repair/</loc>
+    <loc>https://cali-bud.com/blog/why-is-my-washer-not-spinning/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/</loc>
+    <loc>https://cali-bud.com/blog/5-signs-your-refrigerator-needs-repair/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/refrigerator-repair/</loc>
+    <loc>https://cali-bud.com/blog/power-surges-lancaster-refrigerators/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/microwave-repair/</loc>
+    <loc>https://cali-bud.com/blog/why-quartz-hill-chooses-mobile-repair/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/washer-repair/</loc>
+    <loc>https://cali-bud.com/blog/hard-water-effects-palmdale-dishwashers/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/dishwasher-repair/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/oven-stove-repair/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/services/dryer-repair/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/locations/palmdale-appliance-repair/</loc>
+    <loc>https://cali-bud.com/locations/palmdale-appliance-repair/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/locations/quartz-hill-appliance-repair/</loc>
+    <loc>https://cali-bud.com/locations/quartz-hill-appliance-repair/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/locations/lancaster-appliance-repair/</loc>
+    <loc>https://cali-bud.com/locations/lancaster-appliance-repair/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/power-surges-lancaster-refrigerators/</loc>
+    <loc>https://cali-bud.com/services/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/why-quartz-hill-chooses-mobile-repair/</loc>
+    <loc>https://cali-bud.com/services/vapes/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/hard-water-effects-palmdale-dishwashers/</loc>
+    <loc>https://cali-bud.com/services/concentrates/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://d3jg5wepg4zxcs.cloudfront.net/blog/</loc>
+    <loc>https://cali-bud.com/services/pre-rolls/</loc>
     <lastmod>2026-01-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/services/flower-delivery/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/services/edibles/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

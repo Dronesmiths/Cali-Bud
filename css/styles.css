@@ -1,31 +1,27 @@
 :root {
     /* Cali-Bud Delivery - Red, Gold, Green Rebranding */
-    --primary-blue: #1F6AE1;
-    /* Main Service Blue */
-    --primary-accent: #1F6AE1;
-    /* Matched to Primary Blue */
-    --blue-dark: #004488;
-    /* Darker Blue for contrast/hover */
-    --blue-light: #F0F6FF;
-    /* Extra light blue for backgrounds */
+    --primary-blue: #1E7F43;
+    /* Primary Green */
+    --primary-accent: #D62828;
+    /* Red Accent */
+    --blue-dark: #14592D;
+    /* Darker Green for hover */
+    --blue-light: #F0FAF4;
+    /* Light Green tint */
     --white: #ffffff;
     --text-dark: #1a1a1a;
-    /* Dark text */
     --text-light: #f5f5f5;
-    /* Light text */
-    --bg-light: #f9fbfc;
-    /* Subtle blue-tinted white */
+    --bg-light: #fdfdf5;
+    /* Warm Gold tint */
     --footer-dark: #121212;
-    /* Deep grey/black for footer */
     --primary-green: var(--primary-blue);
-    /* Standardized to blue */
-    --primary-yellow: #888888;
-    /* Standardized to Grey for secondary buttons */
-    --primary-dark: var(--blue-dark);
-    --hero-blue-1: rgba(31, 106, 225, 0.85);
-    /* Bright Blue Transparent */
-    --hero-blue-2: rgba(0, 68, 136, 0.75);
-    /* Deeper Blue Transparent */
+    --primary-yellow: #F7C948;
+    /* Gold */
+    --primary-dark: #000000;
+    --hero-blue-1: rgba(30, 127, 67, 0.85);
+    /* Green Transparent */
+    --hero-blue-2: rgba(214, 40, 40, 0.75);
+    /* Red Transparent */
 
     /* Fonts */
     --font-heading: 'Poppins', sans-serif;

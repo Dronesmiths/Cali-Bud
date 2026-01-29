@@ -45,15 +45,15 @@ def generate_hub():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expert Marijuana Delivery Tips & News | Antelope Valley</title>
-    <meta name="description" content="Read our latest guides on refrigerator repair, washer maintenance, and keeping your appliances running in the High Desert heat.">
-    <link rel="canonical" href="https://d3jg5wepg4zxcs.cloudfront.net/blog/" />
+    <title>Cannabis Culture & News | Cali-Bud Delivery</title>
+    <meta name="description" content="Stay informed with the latest cannabis news, product guides, and delivery tips for the Antelope Valley.">
+    <link rel="canonical" href="https://cali-bud.com/blog/" />
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://d3jg5wepg4zxcs.cloudfront.net/blog/">
-    <meta property="og:title" content="Expert Marijuana Delivery Tips & News">
-    <meta property="og:description" content="Read our latest guides on refrigerator repair, washer maintenance, and keeping your appliances running in the High Desert heat.">
+    <meta property="og:url" content="https://cali-bud.com/blog/">
+    <meta property="og:title" content="Cannabis Culture & News | Cali-Bud Delivery">
+    <meta property="og:description" content="Stay informed with the latest cannabis news, product guides, and delivery tips.">
     <meta property="og:image" content="/images/hero-home.webp">
 
     <!-- Fonts -->
@@ -73,7 +73,7 @@ def generate_hub():
     <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo">Mobile <span>Marijuana Delivery</span></a>
+            <a href="/" class="logo">Cali-Bud <span>Delivery</span></a>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -84,24 +84,24 @@ def generate_hub():
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="tel:6614984444" class="phone-link mobile-hide"><i class="fas fa-phone"></i> 661-498-4444</a>
-                <a href="/contact/" class="btn btn-primary">Book Repair</a>
+                <a href="tel:6614984444" class="phone-link mobile-hide"><i class="fas fa-phone"></i> 661-547-2422</a>
+                <a href="/contact/" class="btn btn-primary">Order Now</a>
                 <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </header>
 
     <!-- Page Hero -->
-    <section class="page-hero" style="background-image: linear-gradient(rgba(31, 106, 225, 0.9), rgba(0, 68, 136, 0.9)); padding: 80px 0; background-size: cover; background-position: center;">
+    <section class="page-hero" style="background-image: linear-gradient(rgba(30, 127, 67, 0.9), rgba(20, 89, 45, 0.9)); padding: 80px 0; background-size: cover; background-position: center;">
         <div class="container" style="text-align: center;">
-            <span style="color: #b0e0e6; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Repair Log</span>
-            <h1 style="color: white; font-size: 3rem; margin-top: 10px; max-width: 900px; margin-left: auto; margin-right: auto;">Expert Advice & Local News</h1>
-            <p style="color: rgba(255,255,255,0.9); margin-top: 15px;">Saving you money with maintenance tips and troubleshooting guides.</p>
+            <span style="color: #F7C948; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Green Room</span>
+            <h1 style="color: white; font-size: 3rem; margin-top: 10px; max-width: 900px; margin-left: auto; margin-right: auto;">Cannabis Tips & News</h1>
+            <p style="color: rgba(255,255,255,0.9); margin-top: 15px;">Education, strain reviews, and industry updates.</p>
         </div>
     </section>
 
     <!-- Blog Grid -->
-    <section style="padding: 60px 0; background: #f9f9f9;">
+    <section style="padding: 60px 0; background: #fdfdf5;">
         <div class="container">
             <div class="features-grid grid-balance-3">
 """
@@ -116,11 +116,11 @@ def generate_hub():
         <div class="container aw-footer-inner">
             <div class="aw-footer-brand">
                 <h4 style="color: white; margin-bottom: 15px;">Cali-Bud Delivery</h4>
-                <p>Your trusted appliance repair provider in the Antelope Valley.</p>
+                <p>Your premier cannabis delivery service in the Antelope Valley.</p>
             </div>
             <div class="aw-footer-contact">
                 <h4 style="color: white; margin-bottom: 15px; font-size: 1.1rem;">Contact Us</h4>
-                <p class="aw-footer-phone"><a href="tel:6614984444">661-498-4444</a></p>
+                <p class="aw-footer-phone"><a href="tel:6614984444">661-547-2422</a></p>
             </div>
         </div>
          <div class="aw-footer-neighborhoods" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
@@ -132,7 +132,7 @@ def generate_hub():
             </p>
         </div>
         <div class="aw-footer-bottom">
-            <p>© 2026 Cali-Bud Delivery Service. All rights reserved.</p>
+            <p>© 2026 Cali-Bud Delivery. All rights reserved.</p>
         </div>
     </footer>
     <script src="/js/script.js"></script>
@@ -146,11 +146,11 @@ def generate_hub():
         card = f"""
                 <div class="feature-card" style="text-align: left; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
                     <div style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <span style="color: #1F6AE1; font-size: 0.8rem; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block;">Article</span>
+                        <span style="color: #1E7F43; font-size: 0.8rem; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block;">Article</span>
                         <h3 style="margin-top: 0; margin-bottom: 15px; font-size: 1.3rem;">{article['title']}</h3>
                         <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">{article['description']}</p>
                         <div style="margin-top: auto;">
-                            <a href="/blog/{article['slug']}/" style="color: #1F6AE1; font-weight: 600; text-decoration: none;">Read More &rarr;</a>
+                            <a href="/blog/{article['slug']}/" style="color: #1E7F43; font-weight: 600; text-decoration: none;">Read More &rarr;</a>
                         </div>
                     </div>
                 </div>

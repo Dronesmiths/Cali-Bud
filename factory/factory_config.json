@@ -15,7 +15,7 @@
         "font_body": "'Open Sans', sans-serif"
     },
     "aws": {
-        "bucket_name": "[PENDING_BUCKET_NAME]",
+        "bucket_name": "cali-bud-deliveries",
         "region": "us-east-1",
         "cloudfront_id": "[PENDING_CLOUDFRONT_ID]",
         "profile": "mediusa"

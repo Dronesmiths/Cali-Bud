@@ -3,43 +3,19 @@ import re
 import subprocess
 
 # Configuration
-base_dir = "/Users/mediusa/NOVA/Repos/Diaz Landscaping"
+# Configuration
+base_dir = "/Users/mediusa/NOVA/Repos/Cali-Bud"
 images_dir = os.path.join(base_dir, "images")
 extensions_to_convert = (".png", ".jpg", ".jpeg")
 
 # Mapping of original names to kebab-case
 # (Adding explicit mappings for complex names to avoid collision or confusion)
 name_mapping = {
-    "Aged and broken backyard fence.png": "backyard-fence-broken.webp",
-    "Clean and cleared backyard space.png": "backyard-space-clean.webp",
-    "Cluttered backyard of discarded items.png": "backyard-cluttered.webp",
-    "Freshly repaired wooden fence in sunlight.png": "fence-repaired.webp",
-    "Rustic backyard oasis in Palmdale.png": "palmdale-oasis.webp",
-    "fence-repair-pro.png": "fence-repair-pro.webp",
-    "handyman-hero.png": "handyman-hero.webp",
-    "handyman_deck_fence_repair.png": "handyman-deck-fence.webp",
-    "handyman_home_maintenance.png": "handyman-maintenance.webp",
-    "handyman_light_fixtures.png": "handyman-fixtures.webp",
-    "handyman_painting_drywall.png": "handyman-painting.webp",
-    "hauling_construction_debris.png": "hauling-debris.webp",
-    "hauling_estate_cleanout.png": "hauling-estate.webp",
-    "hauling_trash_junk.png": "hauling-junk.webp",
-    "hauling_yard_waste.png": "hauling-yard.webp",
-    "hero-pergola.png": "hero-pergola.webp",
-    "landscape-hero.png": "landscape-hero.webp",
-    "landscape_custom_patio.png": "landscape-patio.webp",
-    "landscape_irrigation_system.png": "landscape-irrigation.webp",
-    "landscape_outdoor_lighting.png": "landscape-lighting.webp",
-    "landscape_retaining_wall.png": "landscape-wall.webp",
-    "logo-full.png": "logo-full.webp",
-    "logo.png": "logo.webp",
-    "outdoor-lighting-pro.png": "outdoor-lighting-pro.webp",
-    "professional_handyman_team_reed_and_sons_refined.png": "handyman-team-refined.webp",
-    "professional_home_service_team_reed_and_sons_1769565297601.png": "home-service-team.webp",
-    "residential-paving.png": "residential-paving.webp",
-    "retaining-walls-pro.png": "retaining-walls-pro.webp",
-    "waste-cleanup-pro.png": "waste-cleanup-pro.webp",
-    "apple-touch-icon.png": "apple-touch-icon.png", # Keep name but convert? Actually apple prefers png.
+    "hero-home.png": "hero-home.webp",
+    "service-flower.png": "service-flower.webp",
+    "service-edibles.png": "service-edibles.webp",
+    "service-vapes.png": "service-vapes.webp",
+    "apple-touch-icon.png": "apple-touch-icon.png",
     "favicon-16x16.png": "favicon-16x16.png",
     "favicon-32x32.png": "favicon-32x32.png",
 }
