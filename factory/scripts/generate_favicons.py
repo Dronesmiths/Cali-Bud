@@ -29,10 +29,9 @@ def generate_favicons(source_image_path):
 
     # 3. Main Logo & Social Share
     # Standard logo (matches footer usage)
-    logo_size = (400, 150) # Maintain aspect ratio if possible, but for now fit to box
-    img.thumbnail(logo_size, Image.Resampling.LANCZOS)
-    img.save("images/av-pool-bros-logo.png")
-    print("Generated: images/av-pool-bros-logo.png")
+    logo_size = (800, 800) 
+    img.save("images/logo.png")
+    print("Generated: images/logo.png")
 
     img.save("images/logo-og.png")
     print("Generated: images/logo-og.png")
@@ -46,6 +45,7 @@ if __name__ == "__main__":
     
     # Try multiple sources
     sources = [
+        "images/Cali-Bud Club logo design.png",
         "factory/brand_assets/authoritative-logo.png",
         "factory/brand_assets/PLACEHOLDER_LOGO.png",
         "images/av-pool-bros-logo.png" 

@@ -49,7 +49,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--white);
-    cursor: url('../images/cursor-leaf.png') 32 32, auto;
+    cursor: url('../images/cursor-leaf.webp') 32 32, auto;
 }
 
 h1,
@@ -69,7 +69,7 @@ a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer;
 }
 
 .container {
@@ -84,7 +84,7 @@ a {
     border-radius: var(--border-radius-pill);
     font-weight: 700;
     text-align: center;
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer;
     transition: all 0.3s ease;
     border: none;
 }
@@ -143,7 +143,7 @@ header .container {
 header a,
 header button,
 header .btn {
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer !important;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer !important;
 }
 
 .logo {
@@ -213,7 +213,7 @@ nav a.active {
     color: var(--primary-dark);
     background: none;
     border: none;
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer;
     z-index: 1002;
     padding: 5px;
 }
@@ -1093,7 +1093,7 @@ nav a.active {
     padding: 15px 35px;
     border-radius: 50px;
     border: none;
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer;
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -1147,7 +1147,7 @@ nav a.active {
     font-weight: 700;
     color: var(--white);
     /* White Text */
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1581,7 +1581,7 @@ nav a.active {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--primary-navy);
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2381,7 +2381,7 @@ footer {
 
 .aw-footer a,
 .aw-footer button {
-    cursor: url('../images/cursor-leaf.png') 32 32, pointer !important;
+    cursor: url('../images/cursor-leaf.webp') 32 32, pointer !important;
 }
 
 @keyframes ledGlow {
