@@ -89,10 +89,16 @@
 
     <!-- Hero Section -->
     <section class="hero page-hero"
-        style="background-image: linear-gradient(rgba(30, 127, 67, 0.7), rgba(20, 89, 45, 0.9)), url('../images/menu-hero.png'); background-size: cover; background-position: center;">
+        style="background-image: linear-gradient(rgba(30, 127, 67, 0.6), rgba(20, 89, 45, 0.8)), url('../images/menu-hero.png'); background-size: cover; background-position: center; align-items: center; display: flex;">
         <div class="container">
-            <h1>Premium Cannabis Menu</h1>
-            <p>Explore our selection of premium cannabis products available for express delivery.</p>
+            <h1
+                style="font-size: 4.5rem; text-transform: uppercase; letter-spacing: 3px; text-shadow: 0 5px 15px rgba(0,0,0,0.5); line-height: 1.1;">
+                California’s Finest.<br><span style="color: var(--primary-yellow);">Delivered.</span></h1>
+            <p
+                style="font-size: 1.4rem; max-width: 800px; margin: 20px auto 0; font-weight: 500; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">
+                Experience the ultimate <strong
+                    style="color: white; border-bottom: 2px solid var(--primary-yellow);">Premium Cannabis
+                    Menu</strong>. Top-shelf flower, pure concentrates, and artisan edibles.</p>
         </div>
     </section>
 
@@ -165,6 +171,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA Section -->
+    <section class="newsletter-cta">
+        <div class="container newsletter-content">
+            <i class="fas fa-cannabis" style="font-size: 3rem; color: var(--primary-yellow); margin-bottom: 20px;"></i>
+            <h2>Join the V.I.P. List</h2>
+            <p>Get exclusive drops, secret menu items, and 10% off your first delivery.</p>
+            <form class="newsletter-form"
+                onsubmit="event.preventDefault(); alert('Thanks for joining content coming soon!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
 
