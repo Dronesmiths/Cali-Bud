@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+_trash_images/
+*.zip
+.gemini/
+.idea/
+.vscode/
+factory/scripts/__pycache__/

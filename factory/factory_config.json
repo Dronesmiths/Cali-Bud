@@ -1,0 +1,37 @@
+{
+    "client": {
+        "name": "Cali-Bud Delivery",
+        "phone": "661-547-2422",
+        "email": "[EMAIL_ADDRESS]",
+        "address_city": "Antelope Valley",
+        "address_state": "CA",
+        "domain": "cali-bud.com"
+    },
+    "brand": {
+        "primary_color": "#D62828",
+        "secondary_color": "#F7C948",
+        "tertiary_color": "#1E7F43",
+        "font_heading": "'Poppins', sans-serif",
+        "font_body": "'Open Sans', sans-serif"
+    },
+    "aws": {
+        "bucket_name": "[PENDING_BUCKET_NAME]",
+        "region": "us-east-1",
+        "cloudfront_id": "[PENDING_CLOUDFRONT_ID]",
+        "profile": "mediusa"
+    },
+    "seo": {
+        "primary_keywords": [
+            "Marijuana Delivery",
+            "Cannabis Delivery",
+            "Weed Delivery"
+        ],
+        "service_area": [
+            "Antelope Valley",
+            "Palmdale",
+            "Lancaster",
+            "Rosamond",
+            "Quartz Hill"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://d3jg5wepg4zxcs.cloudfront.net/sitemap.xml
