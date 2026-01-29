@@ -119,10 +119,10 @@ blog_template = f"""<!DOCTYPE html>
             <div class="aw-footer-locations">
                 <h4 style="color: white; margin-bottom: 15px;">Products</h4>
                 <ul style="list-style: none; padding: 0;">
-                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Flower</a></li>
-                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Edibles</a></li>
-                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Vapes</a></li>
-                    <li><a href="/menu/" style="color: #ccc; text-decoration: none;">Concentrates</a></li>
+                    <li><a href="/menu/cannabis/" style="color: #ccc; text-decoration: none;">Cannabis</a></li>
+                    <li><a href="/menu/edibles/" style="color: #ccc; text-decoration: none;">Edibles</a></li>
+                    <li><a href="/menu/vapes/" style="color: #ccc; text-decoration: none;">Vapes</a></li>
+                    <li><a href="/menu/concentrates/" style="color: #ccc; text-decoration: none;">Concentrates</a></li>
                 </ul>
             </div>
             <div class="aw-footer-locations">
@@ -132,6 +132,7 @@ blog_template = f"""<!DOCTYPE html>
                     <li><a href="/news/" style="color: #ccc; text-decoration: none;">News Hub</a></li>
                     <li><a href="/about/" style="color: #ccc; text-decoration: none;">About Us</a></li>
                     <li><a href="/contact/" style="color: #ccc; text-decoration: none;">Support</a></li>
+                    <li><a href="/delivery/" style="color: #ccc; text-decoration: none;">Delivery Areas</a></li>
                 </ul>
             </div>
             <div class="aw-footer-contact">

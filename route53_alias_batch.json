@@ -1,0 +1,29 @@
+{
+    "Comment": "Alias records for CloudFront",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "calibud.club.",
+                "Type": "A",
+                "AliasTarget": {
+                    "HostedZoneId": "Z2FDTNDATAQYW2",
+                    "DNSName": "d2p95l9o9s8mfl.cloudfront.net.",
+                    "EvaluateTargetHealth": false
+                }
+            }
+        },
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "www.calibud.club.",
+                "Type": "A",
+                "AliasTarget": {
+                    "HostedZoneId": "Z2FDTNDATAQYW2",
+                    "DNSName": "d2p95l9o9s8mfl.cloudfront.net.",
+                    "EvaluateTargetHealth": false
+                }
+            }
+        }
+    ]
+}

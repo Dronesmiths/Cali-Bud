@@ -1,0 +1,18 @@
+{
+    "Comment": "Triggering re-validation by changing TTL",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "_b9cbd0005c4ce47d31e2efeda6ac959f.calibud.club.",
+                "Type": "CNAME",
+                "TTL": 60,
+                "ResourceRecords": [
+                    {
+                        "Value": "_b0b486580da1c73c727a9dda555624ff.jkddzztszm.acm-validations.aws."
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "Comment": "Deleting incorrect apex validation record",
+    "Changes": [
+        {
+            "Action": "DELETE",
+            "ResourceRecordSet": {
+                "Name": "_68c010ca5ff8d28f4e4317ff09dc02bd.calibud.club.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "_0b12c842dc3fc3544443ef2230f6d0ba.jkddzztszm.acm-validations.aws."
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -48,28 +48,34 @@
             color: #444;
         }
     </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo">
-                <img src="/images/Cali-Bud Club logo design.png" alt="Cali-Bud Delivery Logo"
-                    style="height: 60px; width: auto; display: block;">
-            </a>
+            <a href="/" class="logo">Cali-Bud <span>Delivery</span></a>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/menu/">Menu</a></li>
                     <li><a href="/about/">About Us</a></li>
-                    <li><a href="/blog/" class="active">Blog</a></li>
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="tel:6615472422" class="phone-link mobile-hide"><i class="fas fa-phone"></i> 661-547-2422</a>
-                <a href="/contact/" class="btn btn-primary">Order Now</a>
+                <!-- Mobile Phone Icon -->
+                <a href="tel:6615472422" class="mobile-center-phone" aria-label="Call Now">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <!-- Desktop Actions -->
+                <a href="tel:6615472422" class="btn btn-primary">Order Now</a>
                 <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             </div>
         </div>
@@ -139,14 +145,13 @@
                 </ul>
             </div>
             <div class="aw-footer-locations">
-                <h4 style="color: white; margin-bottom: 15px;">Locations</h4>
+                <h4 style="color: white; margin-bottom: 15px;">Resources</h4>
                 <ul style="list-style: none; padding: 0;">
-                    <li><a href="/locations/lancaster-marijuana-delivery/"
-                            style="color: #ccc; text-decoration: none;">Lancaster</a></li>
-                    <li><a href="/locations/palmdale-marijuana-delivery/"
-                            style="color: #ccc; text-decoration: none;">Palmdale</a></li>
-                    <li><a href="/locations/quartz-hill-marijuana-delivery/"
-                            style="color: #ccc; text-decoration: none;">Quartz Hill</a></li>
+                    <li><a href="/blog/" style="color: #ccc; text-decoration: none;">Blog</a></li>
+                    <li><a href="/news/" style="color: #ccc; text-decoration: none;">News Hub</a></li>
+                    <li><a href="/about/" style="color: #ccc; text-decoration: none;">About Us</a></li>
+                    <li><a href="/contact/" style="color: #ccc; text-decoration: none;">Support</a></li>
+                    <li><a href="/delivery/" style="color: #ccc; text-decoration: none;">Delivery Areas</a></li>
                 </ul>
             </div>
             <div class="aw-footer-contact">
@@ -157,7 +162,7 @@
             </div>
         </div>
         <div class="aw-footer-bottom">
-            <p>© 2026 Cali-Bud Delivery. All rights reserved.</p>
+            <p>© 2026 Cali-Bud Delivery. All rights reserved. | <a href="/sitemap.xml" style="color: inherit; text-decoration: none; opacity: 0.8;">Sitemap</a></p>
         </div>
     </footer>
     <script src="/js/script.js"></script>

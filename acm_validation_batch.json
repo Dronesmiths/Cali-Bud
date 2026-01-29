@@ -1,0 +1,31 @@
+{
+    "Comment": "Correcting ACM Validation Records",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "_b9cbd0005c4ce47d31e2efeda6ac959f.calibud.club.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "_b0b486580da1c73c727a9dda555624ff.jkddzztszm.acm-validations.aws."
+                    }
+                ]
+            }
+        },
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "_68c010ca5ff8d28f4e4317ff09dc02bd.www.calibud.club.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "_0b12c842dc3fc3544443ef2230f6d0ba.jkddzztszm.acm-validations.aws."
+                    }
+                ]
+            }
+        }
+    ]
+}

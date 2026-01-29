@@ -49,6 +49,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--white);
+    cursor: url('../images/cursor-leaf.png') 32 32, auto;
 }
 
 h1,
@@ -68,6 +69,7 @@ a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
 }
 
 .container {
@@ -82,7 +84,7 @@ a {
     border-radius: var(--border-radius-pill);
     font-weight: 700;
     text-align: center;
-    cursor: pointer;
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
     transition: all 0.3s ease;
     border: none;
 }
@@ -115,12 +117,18 @@ a {
 
 /* Header */
 header {
-    background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background-color: var(--blue-light);
+    /* Subtle light green tint */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Slightly softer shadow */
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 5px 0;
+    /* Reduced from 15px to allow larger logo */
+    border-bottom: 1px solid rgba(30, 127, 67, 0.1);
+    /* Subtle green border */
+    cursor: default;
 }
 
 header .container {
@@ -129,21 +137,36 @@ header .container {
     align-items: center;
     position: relative;
     /* Needed for absolute positioning of mobile menu */
+    cursor: default;
+}
+
+header a,
+header button,
+header .btn {
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer !important;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 900;
     color: var(--primary-dark);
     z-index: 1001;
     text-decoration: none;
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
+    /* Tighter for that modern look */
 }
 
 .logo span {
-    color: var(--primary-blue);
-    font-weight: 900;
+    color: var(--primary-green);
+    margin-left: 8px;
+}
+
+/* Remove the absolute img height to allow natural text scaling */
+.logo img {
+    display: none;
 }
 
 /* Desktop Navigation */
@@ -190,7 +213,7 @@ nav a.active {
     color: var(--primary-dark);
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
     z-index: 1002;
     padding: 5px;
 }
@@ -217,10 +240,13 @@ nav a.active {
 
     /* Logo - Full Text (Restored) */
     .logo {
-        font-size: 24px;
-        /* Increased from 20px */
         flex-shrink: 1;
         margin-right: 5px;
+    }
+
+    .logo img {
+        height: 65px !important;
+        /* Slightly smaller for mobile */
     }
 
     .logo span {
@@ -256,7 +282,8 @@ nav a.active {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--white);
+        background-color: var(--blue-light);
+        /* Matching header background */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         padding: 20px;
         flex-direction: column;
@@ -1066,7 +1093,7 @@ nav a.active {
     padding: 15px 35px;
     border-radius: 50px;
     border: none;
-    cursor: pointer;
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -1120,7 +1147,7 @@ nav a.active {
     font-weight: 700;
     color: var(--white);
     /* White Text */
-    cursor: pointer;
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1554,7 +1581,7 @@ nav a.active {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--primary-navy);
-    cursor: pointer;
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2349,6 +2376,12 @@ footer {
     border-top: 5px solid var(--primary-yellow);
     /* Gold Border */
     position: relative;
+    cursor: default;
+}
+
+.aw-footer a,
+.aw-footer button {
+    cursor: url('../images/cursor-leaf.png') 32 32, pointer !important;
 }
 
 @keyframes ledGlow {
@@ -3700,4 +3733,34 @@ footer {
     .locations-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Blinking Status Banner */
+@keyframes blink-green-yellow {
+
+    0%,
+    100% {
+        background-color: var(--primary-color);
+        box-shadow: 0 0 15px rgba(30, 127, 67, 0.5);
+    }
+
+    50% {
+        background-color: var(--primary-yellow);
+        color: #000;
+        box-shadow: 0 0 20px rgba(247, 201, 72, 0.6);
+    }
+}
+
+.live-status-banner {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    color: #fff;
+    margin-bottom: 50px;
+    animation: blink-green-yellow 1.5s infinite;
+    letter-spacing: 1px;
+    cursor: default;
 }
