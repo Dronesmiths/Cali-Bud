@@ -994,17 +994,15 @@ nav a.active {
 }
 
 .faq-item {
-    background-color: #1E7F43;
-    /* Fallback Solid Green */
-    background-image: linear-gradient(to bottom, #1E7F43, #14592D);
-    /* Dark Green Gradient */
+    background: #1E7F43 !important;
+    /* Force Green */
+    background: linear-gradient(180deg, #1E7F43 0%, #14592D 100%) !important;
+    /* Force Gradient */
     border: 3px solid var(--primary-yellow);
-    /* Gold Border */
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    /* Contains the answer radius */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
