@@ -1,18 +1,23 @@
 :root {
     /* Cali-Bud Delivery - Red, Gold, Green Rebranding */
+    --primary-color: #1E7F43;
+    /* Green */
+    --secondary-color: #D62828;
+    /* Red */
+    --accent-color: #F7C948;
+    /* Gold */
     --primary-blue: #1E7F43;
-    /* Primary Green */
+    /* Primary Green (kept for existing usage) */
     --primary-accent: #D62828;
-    /* Red Accent */
+    /* Red Accent (kept for existing usage) */
     --blue-dark: #14592D;
     /* Darker Green for hover */
     --blue-light: #F0FAF4;
     /* Light Green tint */
-    --white: #ffffff;
-    --text-dark: #1a1a1a;
-    --text-light: #f5f5f5;
-    --bg-light: #fdfdf5;
-    /* Warm Gold tint */
+    --white: #fff;
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f9f9f9;
     --footer-dark: #121212;
     --primary-green: var(--primary-blue);
     --primary-yellow: #F7C948;
@@ -2994,5 +2999,158 @@ footer {
     .ba-slider::-moz-range-thumb {
         width: 45px;
         height: 45px;
+    }
+}
+
+/* Process Section (How It Works) */
+.process-section {
+    padding: 100px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.process-card {
+    background: var(--white);
+    border: 2px solid var(--primary-blue);
+    /* Green border */
+    border-radius: 20px;
+    padding: 50px 30px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.process-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -90px auto 30px;
+    /* Pull icon up */
+    border: 4px solid var(--white);
+    /* White ring */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.process-icon {
+    font-size: 32px;
+    color: var(--primary-blue);
+}
+
+.process-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.process-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Location Grid Section - Cali-Bud Themed */
+.locations-section {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+    /* Warm Brand Background */
+    text-align: center;
+    position: relative;
+    border-top: 5px solid var(--primary-yellow);
+    /* Gold Top Border */
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.location-card {
+    background: var(--white);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+
+.location-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 127, 67, 0.15);
+    /* Green Shadow */
+    border-color: var(--primary-yellow);
+    /* Gold Border on Hover */
+}
+
+.location-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--blue-dark) 100%);
+    /* Green Gradient */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(30, 127, 67, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover .location-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, var(--primary-accent) 0%, #a01e1e 100%);
+    /* Red Gradient on Hover */
+}
+
+.location-icon {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.location-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.location-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
     }
 }

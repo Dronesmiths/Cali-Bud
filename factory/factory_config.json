@@ -17,7 +17,7 @@
     "aws": {
         "bucket_name": "cali-bud-deliveries",
         "region": "us-east-1",
-        "cloudfront_id": "[PENDING_CLOUDFRONT_ID]",
+        "cloudfront_id": "E48DSMEP69HP2",
         "profile": "mediusa"
     },
     "seo": {
