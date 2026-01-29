@@ -76,15 +76,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://cali-bud.com/services/flower-delivery/</loc>
+    <loc>https://cali-bud.com/menu/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cali-bud.com/services/edibles/</loc>
+    <loc>https://cali-bud.com/menu/flower-delivery/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/menu/edibles/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/menu/pre-rolls/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/menu/vapes/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/menu/concentrates/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cali-bud.com/menu/accessories/</loc>
     <lastmod>2026-01-28</lastmod>
     <priority>0.8</priority>
   </url>
